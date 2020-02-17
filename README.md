@@ -1,11 +1,11 @@
 # Random Quote Machine
 
 The page shows random quotes from the Hitch Hikers Guide to the Galaxy series by Douglas Adams.
-The page was made as a project as part of the Free Code Camp course on Responsive Web Design.  It uses React and obtains the quote information from another webpage using a fetch request:
+The page was made as a project as part of the Free Code Camp course on Front End Libraries.  It uses React and obtains the quote information from another webpage using a fetch request:
 
 ## Random Quote Machine Tests
 
-###Content
+### Content
 
 1. I can see a wrapper element with a corresponding id="quote-box".
 2. Within #quote-box, I can see an element with corresponding id="text".
@@ -18,6 +18,6 @@ The page was made as a project as part of the Free Code Camp course on Responsiv
 9. My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
 10. I can tweet the current quote by clicking on the #tweet-quote <a> element. This <a> element should include the "twitter.com/intent/tweet" path in it's href attribute to tweet the current quote.
 
-###Layout
+### Layout
 
 1. The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
