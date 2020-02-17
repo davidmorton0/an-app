@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  overflow-y: scroll;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url(https://raw.githubusercontent.com/davidmorton0/QuoteGenerator/master/stars-l.jpg);
+  font-family: 'Titillium Web', sans-serif;
+  --outline-color: #8ca6d1;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 1vw;
+}
+
+#app {
+  height: 300px;
+  width: 500px;
+  margin: 40px auto;
+  background: linear-gradient(0deg, rgba(0,0,30,0.7), rgba(40,40,180,0.7) 70%);
+  border: solid rgba(20,20,80) 10px;
+}
+
+#quote-box {
+  display: grid;
+  grid-template: 'quote quote'
+                 'author author'
+                 'new-quote tweet';
+  border: solid var(--outline-color) 1px;
+  padding: 10px;
+}
+
+#item1 {
+  grid-area: quote;
+  padding: 10px;
+  height: 170px;
+}
+
+#item2 {
+  grid-area: author;
+  height: 50px;
+  display: flex;
+}
+
+#item3 {
+  grid-area: new-quote;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+#item4 {
+  grid-area: tweet;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+}
+
+#text {
+  font-size: 1.05em;
+  color: var(--outline-color);
+}
+
+#author {
+  font-size: 1.6em;
+  color: var(--outline-color);
+  line-height: 0;
+}
+
+#new-quote, #tweet-quote {
+  border: solid var(--outline-color) 1px;
+  background-color: Black;
+  color: var(--outline-color);
+  width: 100px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }

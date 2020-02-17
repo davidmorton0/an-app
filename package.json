@@ -1,6 +1,6 @@
 {
-  "homepage": "http://davidmorton0.github.io/an-app",
-  "name": "an-app",
+  "homepage": "http://davidmorton0.github.io/random-quote-machine",
+  "name": "random-quote-machine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
